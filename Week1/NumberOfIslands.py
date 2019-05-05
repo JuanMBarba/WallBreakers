@@ -54,4 +54,9 @@ class Solution:
                 else:
                     UFGrid.parent[x*lengthY+y] = -1
         
-        return len(set([UFGrid.find(x) for x in range(lengthX*lengthY)])-{-1})
+        finalSet = set(UFGrid.parent)-{-1}
+        
+        if len(finalSet) == 1:
+            return len(finalSet)
+        
+        return len(set([UFGrid.find(x) for x in finalSet]))
