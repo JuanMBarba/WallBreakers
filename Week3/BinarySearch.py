@@ -3,7 +3,8 @@ class Solution:
         
         lenNums = len(nums)
         
-        left,right = 0, lenNums-1
+        left = 0
+        right = lenNums-1
         
         
         while left<=right:
