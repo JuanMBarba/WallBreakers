@@ -11,10 +11,8 @@ class Solution:
                 index = index+lenP
                 last = False
                 continue
-            if last and s[index+lenP-1] == s[index-1]:
+            elif last and s[index+lenP-1] == s[index-1]:
                 output.append(index)
-                index+=1
-                continue
             elif s[index:index+lenP] == p:
                 output.append(index)
                 last= True
