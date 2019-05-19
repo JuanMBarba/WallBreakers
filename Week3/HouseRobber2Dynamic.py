@@ -13,7 +13,6 @@ class Solution(object):
             
             previous = 0
             current = 0
-            maximum = 0
             for index in range(lenNums-1):
                 maximum = max(previous + nums[index], current)
                 previous = current
