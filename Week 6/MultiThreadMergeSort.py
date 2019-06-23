@@ -1,5 +1,4 @@
 import threading
-import math
 
 def merge(first, mid , last):
     left = A[first:mid+1]+[float('inf')]
